@@ -1,0 +1,6 @@
+laba: deque.o main.o
+  gcc deque.o main.o
+queue.o : deque.h deque.c
+  gcc -c deque.c
+main.o : deque.h main.c
+  gcc -c main.c
